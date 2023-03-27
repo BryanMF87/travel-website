@@ -1,0 +1,5 @@
+node_modules/
+.cache/
+public
+../nextjs-blog
+../world-flag-flashcards
