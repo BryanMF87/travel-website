@@ -2,7 +2,10 @@ import styled from "styled-components";
 import {HiUser} from 'react-icons/hi';
 
 export const ArrowBtn = styled.button`
+    color: var(--dark);
+    border: .125rem solid var(--dark);
     position: absolute;
+    width: fit-content;
     z-index: 100;
     background: white;
     padding: .5rem .5rem .25rem .5rem;
@@ -21,19 +24,35 @@ export const OuterContainer = styled.div`
     margin: 0 auto;
 
     button:first-of-type {
-        left: -2.5%;
+        left: -7%;
     }
 
     button:last-of-type {
-        right: -2.5%;
+        right: -7%;
     }
 
     @media screen and (min-width: 38.625rem) {
         width: 38.625rem;
+
+        button:first-of-type {
+            left: -4%;
+        }
+
+        button:last-of-type {
+            right: -4%;
+        }
     }
 
     @media screen and (min-width: 58.5rem) {
         width: 58.5rem;
+
+        button:first-of-type {
+            left: -2.5%;
+        }
+
+        button:last-of-type {
+            right: -2.5%;
+        }
     }
 `;
 

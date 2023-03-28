@@ -11,7 +11,7 @@ export const Nav = styled.nav`
   width: 100%;
   max-width: 62.5rem;
   margin: 0 auto;
-  padding: 1rem 0 2rem 0;
+  padding: 1rem 0 .5rem 0;
 
   @media screen and (min-width: 768px) {
     padding: 0 2rem;
@@ -48,8 +48,9 @@ export const NavMenu = styled.div`
   background: white;
   width: 100%;
   overflow: hidden;
+  font-size: 1.2rem;
   height: 0;
-  padding: ${({menu}) => menu ? '7rem 0' : '0'};
+  padding: ${({menu}) => menu ? '8rem 0' : '0'};
   transition: 0.3s ease;
 
   @media screen and (min-width: 768px) {
@@ -65,7 +66,7 @@ export const NavMenu = styled.div`
 export const NavLinks = styled.ul`
   display: flex;
   flex-direction: column;
-  gap: .75rem 0;
+  gap: .5rem 0;
   text-align: center;
   align-items: center;
 
@@ -78,6 +79,13 @@ export const NavLinks = styled.ul`
 export const NavLink = styled.li`
   color: var(--light);
   font-weight: 300;
+  width: 90%;
+  background: var(--crazyLight);
+  border-radius: .5rem;
+  display: flex;
+  padding: .5rem .5rem .5rem 1rem;
+  align-items: center;
+  gap: .65rem;
 
       &:first-child {
         color: var(--dark);
@@ -85,6 +93,18 @@ export const NavLink = styled.li`
       }
 
       &:hover {
+        background: var(--lightest);
+      }
+
+      @media screen and (min-width: 768px) {
+        background: none;
+
+        & :first-child {
+          display: none;
+        }
+
+        &:hover {
           color: var(--lighter);
+        }
       }
 `;

@@ -1,6 +1,8 @@
 import React, {useState, useEffect} from 'react';
 import {WhiteButton} from '../../globalStyles';
 import {Nav, NavIcon, NavMenu, NavLinks, NavLink} from "../Navbar/Navbar.elements";
+import {FaMountain, FaMapMarkedAlt, FaHiking} from 'react-icons/fa';
+import {MdFlight} from 'react-icons/md';
 
 const Navbar = () => { 
 
@@ -12,13 +14,13 @@ const Navbar = () => {
 
     return (
         <Nav>
-            <NavIcon size={"1.5rem"} onClick={() => setMenu(!menu)} />
+            <NavIcon size={"2rem"} onClick={() => setMenu(!menu)} />
             <NavMenu menu={menu}>
                 <NavLinks>
-                <NavLink>Home</NavLink>
-                <NavLink>Guide</NavLink>
-                <NavLink>Flights</NavLink>
-                <NavLink>About</NavLink>
+                <NavLink><FaMountain/> Home</NavLink>
+                <NavLink><FaMapMarkedAlt/> Guide</NavLink>
+                <NavLink><MdFlight size={"1.35rem"}/> Flights</NavLink>
+                <NavLink><FaHiking/> About</NavLink>
                 </NavLinks>
                 <WhiteButton>Contact Us</WhiteButton>
             </NavMenu>

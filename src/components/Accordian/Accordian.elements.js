@@ -10,12 +10,14 @@ export const AccordianLi = styled.li`
     border-bottom: solid 2px var(--dark);
     display: flex;
     flex-direction: column;
+    color: var(--dark);
 
     & :hover {
-        background: var(--lightest);
+        background: var(--crazyLight);
     }
 
     button {
+        color: var(--dark);
         border: none;
         font-weight: 400;
         border-radius: 0;
@@ -28,6 +30,7 @@ export const AccordianLi = styled.li`
     }
 
     span {
+        color: var(--dark);
         font-size: 1.5rem;
         line-height: .5rem;
         margin-top: .2rem;

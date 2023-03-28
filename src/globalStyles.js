@@ -7,6 +7,7 @@ const GlobalStyle = createGlobalStyle`
         --light: #515155;
         --lighter: #c4c4c4;
         --lightest: #e5e5e5;
+        --crazyLight: #f1f1f1;
     }
 
     * {
@@ -72,12 +73,16 @@ const GlobalStyle = createGlobalStyle`
         cursor: pointer;
     }
 
-    button { 
-        padding: .4rem 2rem;
+    button {
+        padding: .75rem 2rem;
         cursor: pointer;
         font-weight: 900;
         border-radius: .25rem;
-        width: fit-content;
+        width: 100%;
+
+        @media screen and (min-width: 768px) {
+            width: fit-content;
+        }
     }
 `;
 
@@ -99,6 +104,8 @@ const GlobalStyle = createGlobalStyle`
         border: .1rem solid var(--dark);
         background: white;
         margin: 0 auto;
+        width: 90%;
+        font-size: 1rem;
 
         &:hover {
             background: var(--dark);
@@ -106,6 +113,7 @@ const GlobalStyle = createGlobalStyle`
         }
 
         @media screen and (min-width: 768px) {
+            width: fit-content;
             margin: initial;
         }
     `;
@@ -114,10 +122,16 @@ const GlobalStyle = createGlobalStyle`
     background: var(--dark);
     color: white;
     border: .1rem solid var(--dark);
+    width: 90%;
 
         &:hover {
             background: white;
             color: var(--dark);
+        }
+
+        @media screen and (min-width: 768px) {
+            width: fit-content;
+            margin: initial;
         }
     `;
 

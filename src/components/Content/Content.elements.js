@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import arrow from '../../images/arrow.png';
 
 export const Hero = styled.div`
-    padding: 2rem 0 4rem 0;
+    padding: 0 0 4rem 0;
     z-index: 1;
     position: relative;
 `;
@@ -11,6 +11,7 @@ export const HeroInfo = styled.div`
 
     display: flex;
     flex-direction: column-reverse;
+    text-align: center;
     gap: 2rem;
     position: relative;
     z-index: 50;
@@ -22,7 +23,23 @@ export const HeroInfo = styled.div`
     }
 
     p {
+        text-align: center;
         max-width: 35rem;
+    }
+
+    button {
+        margin: 0 auto;
+    }
+
+    @media screen and (min-width: 768px) {
+
+        p, h2 {
+            text-align: left;
+        }
+
+        button {
+            margin: 0;
+        } 
     }
 
     @media screen and (min-width: 887px) {
@@ -48,7 +65,7 @@ export const DarkSection = styled.div`
     background: var(--dark);
     color: white;
     text-align: center;
-    padding: 2.5rem 0 3rem 0;
+    padding: 2.5rem 1rem 3rem 1rem;
     position: relative;
     z-index: 20;
 
@@ -60,7 +77,6 @@ export const DarkSection = styled.div`
         gap: 1rem;
         z-index: 99;
         background-color: var(--dark);
-        padding: 0;
     }
 
     button {
@@ -267,6 +283,7 @@ export const ListSection = styled.div`
 
     h2 {
         margin-top: 2rem;
+        text-align: center;
     }
 
     img {
@@ -276,6 +293,10 @@ export const ListSection = styled.div`
     }
 
     @media screen and (min-width: 640px) {
+        h2 {
+            text-align: left;
+        }
+
         img {
             object-position: center;
         }
@@ -316,6 +337,10 @@ export const FormSection = styled.div`
     padding: 4rem 0 8rem 0;
     gap: 2.5rem;
 
+    h2 {
+        text-align: center;
+    }
+
     form {
         display: flex;
         flex-direction: column;
@@ -355,9 +380,8 @@ export const FormSection = styled.div`
 
     button {
         font-weight: 400;
+        font-size: 1rem;
         width: 100%;
-        max-width: 15rem;
-        padding: .5rem 0;
         margin-top: 2rem;
     }
 
@@ -370,17 +394,24 @@ export const FormSection = styled.div`
         flex-direction: row;
         gap: 3.5rem;
 
+        h2 {
+            text-align: left;
+        }
+
         div {
             width: 45%;
         }
 
-        button {
-            width: 100%;
-            max-width: 100%;
-        }
-
         img {
             width: 55%;
+        }
+    }
+
+    @media screen and (min-width: 1024px) {
+        button {
+            max-width: 15rem;
+            padding: .5rem 0;
+            margin-top: 2rem;
         }
     }
 `;
