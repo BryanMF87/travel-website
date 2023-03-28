@@ -11,7 +11,8 @@
     "start": "gatsby develop",
     "build": "gatsby build",
     "serve": "gatsby serve",
-    "clean": "gatsby clean"
+    "clean": "gatsby clean",
+    "deploy": "gatsby build && gh-pages -d public -b main"
   },
   "dependencies": {
     "@react-icons/all-files": "^4.1.0",
@@ -27,5 +28,8 @@
     "react-styled-carousel": "^0.5.1",
     "slick-carousel": "^1.8.1",
     "styled-components": "^5.3.8"
+  },
+  "devDependencies": {
+    "gh-pages": "^5.0.0"
   }
 }
