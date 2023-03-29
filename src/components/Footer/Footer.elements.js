@@ -10,7 +10,7 @@ export const Section = styled.div`
     }
 
     img {
-        display: none;
+        display: none; 
     }
 
     @media screen and (min-width: 768px) {
