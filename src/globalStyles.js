@@ -82,6 +82,7 @@ const GlobalStyle = createGlobalStyle`
 
         @media screen and (min-width: 768px) {
             width: fit-content;
+            padding: .5rem 1rem;
         }
     }
 `;
