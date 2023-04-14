@@ -98,13 +98,10 @@ export const NavLink = styled.li`
 
       @media screen and (min-width: 768px) {
         background: none;
+        padding: .5rem;
 
         & :first-child {
           display: none;
-        }
-
-        &:hover {
-          color: var(--lighter);
         }
       }
 `;
