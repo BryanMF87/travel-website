@@ -8,6 +8,7 @@ module.exports = {
     siteUrl: `https://www.yourdomain.tld`,
   },
   plugins: [
+    `gatsby-plugin-netlify`,
     'gatsby-plugin-styled-components',
     {
       resolve: `gatsby-omni-font-loader`,
