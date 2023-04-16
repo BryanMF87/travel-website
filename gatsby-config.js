@@ -5,7 +5,7 @@ module.exports = {
   pathPrefix: "/travel-website",
   siteMetadata: {
     title: 'gatsby website',
-    siteUrl: `https://www.yourdomain.tld`,
+    siteUrl: `https://www.bryanfink.dev`,
   },
   plugins: [
     `gatsby-plugin-netlify`,
