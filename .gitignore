@@ -1,5 +1,25 @@
-node_modules/
-.cache/
-public
-../nextjs-blog
-../world-flag-flashcards
+# Ignore the public directory
+/public
+
+# Ignore the .cache directory
+.cache
+
+# Ignore the node_modules directory
+/node_modules
+
+# Ignore build output
+/build
+
+# Ignore .env files used for environment variables
+.env
+
+# Ignore development tools configuration files
+.eslintrc
+.prettierignore
+.prettierrc
+
+# Ignore macOS files
+.DS_Store
+
+# Ignore Visual Studio Code files
+.vscode/
